@@ -248,8 +248,8 @@ CreateXlibSurfaceKHR(VkInstance instance, const VkXlibSurfaceCreateInfoKHR *pCre
 {
    const VkXcbSurfaceCreateInfoKHR CreateInfo = {
       .sType = VK_STRUCTURE_TYPE_XCB_SURFACE_CREATE_INFO_KHR,
-      .flags = 0,
       .pNext = NULL,
+      .flags = 0,
       .connection = XGetXCBConnection(pCreateInfo->dpy),
       .window = static_cast<xcb_window_t>(pCreateInfo->window),
    };
